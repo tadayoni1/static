@@ -8,6 +8,10 @@ pipeline {
           s3Upload(file: 'index.html', bucket: 'tirgan-jenkins-website');
         }
       }
+    stage('Lint HTML') {
+      steps {
+         sh 'tidy -q -e *.html'
+      }
     }
   }
 }
