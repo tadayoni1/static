@@ -1,2 +1,2 @@
 # static
-A static website that deploys to AWS with a Jenkins pipeline
+A static website that is deployed to AWS with a Jenkins pipeline
